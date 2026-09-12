@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController("/hello")
+@RestController("/first")
 @RequiredArgsConstructor
 public class HelloWorldController {
 
@@ -37,7 +37,12 @@ public class HelloWorldController {
     }
     @GetMapping("/hello")
     public String hello() {
-        return "Hello from Rin!";
+        return "Hello from ME!";
+    }
+
+    @GetMapping("/hello/{name}")
+    public String helloWithName(@PathVariable String name) {
+        return "HELLO FROM " + name + "!!!!";
     }
 
 }
