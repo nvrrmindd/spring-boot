@@ -1,0 +1,14 @@
+# Базовый (общий) конфиг - применяется ВСЕГДА, независимо от профиля.
+# Профильные файлы (application-dev.yml, application-test.yml) только
+# переопределяют то, что им нужно.
+
+spring:
+  application:
+    name: practice2-3-demo
+
+app:
+  name: "Practice Demo"
+  greeting-language: en   # en или ru
+  max-greetings: 3
+  feature:
+    extra-enabled: false

@@ -1,0 +1,16 @@
+# Профиль DEV - для локальной разработки.
+# Активируется: --spring.profiles.active=dev
+
+server:
+  port: 8081
+
+logging:
+  level:
+    root: INFO
+    kz.kbtu.demo: DEBUG
+
+app:
+  greeting-language: ru
+  max-greetings: 5
+  feature:
+    extra-enabled: true   # в dev включаем "фичу", чтобы её видеть и тестировать руками

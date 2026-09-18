@@ -1,0 +1,13 @@
+# Профиль TEST - используется автотестами (@ActiveProfiles("test")).
+# port: 0 значит "возьми любой свободный порт", чтобы тесты не конфликтовали
+# друг с другом и с портом, который уже занят в dev.
+
+server:
+  port: 0
+
+app:
+  name: "Practice Demo (test)"
+  greeting-language: en
+  max-greetings: 1
+  feature:
+    extra-enabled: false
